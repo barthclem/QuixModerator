@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="79.0" layoutX="8.0" layoutY="7.0" stroke="#f8f4f4" strokeType="INSIDE" strokeWidth="0.0" width="611.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop color="#ddb53bd4" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <TableView fx:id="tableView" layoutX="4.0" layoutY="91.0" prefHeight="334.0" prefWidth="622.0">
+         <columns>
+            <TableColumn fx:id="NameColumn" prefWidth="290.0" text="Name" />
+            <TableColumn fx:id="GroupColumn" prefWidth="115.0" text="Group" />
+            <TableColumn fx:id="StatusColumn" prefWidth="114.0" text="Status" />
+            <TableColumn fx:id="ScoreColumn" text="Score" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label alignment="CENTER" layoutX="213.0" layoutY="23.0" prefHeight="48.0" prefWidth="201.0" text="RESULT PAGE " textAlignment="CENTER" textFill="#1d2814">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
